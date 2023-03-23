@@ -35,6 +35,4 @@ public class CloudGatewayApplication {
  * Then we can access like that (if we use dev config for all 4 apps):
  *
  * http://localhost:8080/test/checkconnectiontoprovider
- *
- * But this gateway also uses security so we have a secure dingsbums
  */
