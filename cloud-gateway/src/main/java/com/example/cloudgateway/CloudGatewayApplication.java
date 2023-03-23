@@ -27,7 +27,14 @@ public class CloudGatewayApplication {
  * to call the eureka to get hostname and port anymore!
  *
  * We just have a Eureka Client here
- * We use it to connect to other Services connected to Eureka
+ * We use it to connect to other Services connected to Eureka.
+ *
+ * We need to use the eureka-loadbalancer (see config) where
+ * we specify with lb://needed-eureka-client-name-that-is-shown-in-the-registry
+ *
+ * Then we can access like that (if we use dev config for all 4 apps):
+ *
+ * http://localhost:8080/test/checkconnectiontoprovider
  *
  * But this gateway also uses security so we have a secure dingsbums
  */

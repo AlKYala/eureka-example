@@ -10,6 +10,7 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      #IN ROUTES WE REDIRECT - in this example we can just redirect to the consumer client
       routes: #THIS IS HOW YOU ROUTE FROM GATEWAY TO SERVICES THAT ARE REIGSTERED IN EUREKA
         - id: this-is-just-an-identifier #this is just a name
           uri: lb://spring-cloud-eureka-consumer-client #this is important - this uses the built in loadbalancer (lb) of eureka - you need to specify the reigstered eureka client
