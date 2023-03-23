@@ -1,0 +1,4 @@
+eureka:
+  client:
+    registerWithEureka: false #in no environment must this be a eureka client - only server!
+    fetchRegistry: false # tell the inbuilt client not to configure with eureka server - this one is the server not a client
