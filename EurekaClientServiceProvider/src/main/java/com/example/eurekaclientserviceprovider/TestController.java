@@ -1,5 +1,6 @@
 package com.example.eurekaclientserviceprovider;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
 
-    @RequestMapping("/check")
+    @GetMapping("/check")
     public String getCheckMessage() {
         return "Connection to Service Provider successful";
     }
